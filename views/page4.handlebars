@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>All Dogs</title>
+</head>
+
+<body>
+    <h1>All Dogs</h1>
+
+    <!-- Navigation -->
+    <a href="/">Home</a>
+    <a href="/page1">Page 1</a>
+    <a href="/page2">Page 2</a>
+    <a href="/page3">Page 3</a>
+
+    <h2>Dogs in the Database</h2>
+
+    <ul>
+        {{#each dogs}}
+        <li>
+            Name: {{this.name}},
+            Breed: {{this.breed}},
+            Age: {{this.age}}
+        </li>
+        {{else}}
+        <li>No dogs have been added yet.</li>
+        {{/each}}
+    </ul>
+
+</body>
+
+</html>
